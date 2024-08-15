@@ -1,9 +1,7 @@
 import dotenv from "dotenv";
 
-// Carregar variáveis de ambiente
 dotenv.config();
 
-// Exportar configuração do banco de dados
 export const configDB = {
     development: {
         username: process.env.DB_USER,

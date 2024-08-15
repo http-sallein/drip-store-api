@@ -14,7 +14,4 @@ export const ProductCategory = context.define('ProductCategory', {
         type: DataTypes.INTEGER,
         allowNull: false,
     },
-}, {
-    tableName: 'product_category', 
-    timestamps: false,
-});
+}, { tableName: 'product_category', timestamps: false, });

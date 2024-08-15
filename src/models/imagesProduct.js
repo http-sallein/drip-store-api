@@ -27,7 +27,4 @@ export const ImagesProduct = context.define('ImagesProduct', {
         allowNull: false,
     },
 
-}, {
-    tableName: 'images_product', 
-    timestamps: false,
-});
+}, { tableName: 'images_product', timestamps: false, });
