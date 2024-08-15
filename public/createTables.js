@@ -1,5 +1,12 @@
 import { context } from "../src/config/context.js";
 
+import { Category } from '../src/models/category.js';
+import { ImagesProduct } from './../src/models/imagesProduct.js';
+import { OptionsProduct } from './../src/models/optionsProduct.js';
+import { Product } from './../src/models/product.js';
+import { ProductCategory } from './../src/models/productsCategory.js';
+import { User } from '../src/models/user.js';
+
 export async function createTables() {
     try {
         await context.authenticate();  // Verifica a conexão com o banco de dados
