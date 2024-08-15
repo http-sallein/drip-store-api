@@ -38,20 +38,37 @@
 
 
 import { DataTypes } from "sequelize";
+
 import { context } from './../config/context.js';
 
 export const User = context.define('User', {
-    // Campos
-    username: {
-        type: DataTypes.STRING(30), // varchar(30)
-        allowNull: false,   // NOT NULL
+
+    first_name: {
+
+        type: DataTypes.STRING, 
+        allowNull: false,   
     },
+
+    sur_name: {
+
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+
     email: {
-        type: DataTypes.STRING(50), // varchar(30)
-        allowNull: false,   // NOT NULL
-        unique: true,       // Não pode repetir o e-mail
+
+        type: DataTypes.STRING,
+        allowNull: false,   
+        unique: true,       
     },
+
+    password: {
+
+        type: DataTypes.STRING,
+        allowNull: false,
+    }
+
 }, {
-    tableName: 'users', // Nome da tabela
-    timestamps: true,   // Cria campos createdAt e updatedAt automaticamente
+    tableName: 'user', 
+    timestamps: true,   
 });
