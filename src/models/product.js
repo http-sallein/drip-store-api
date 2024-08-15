@@ -53,10 +53,7 @@ export const Product = context.define('Product', {
         allowNull: false,
     },
 
-}, {
-    tableName: 'product', 
-    timestamps: false,
-});
+}, { tableName: 'product', timestamps: false, });
 
 
 Product.hasMany(ImagesProduct);

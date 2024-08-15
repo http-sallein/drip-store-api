@@ -43,7 +43,4 @@ export const OptionsProduct = context.define('OptionsProduct', {
         allowNull: false,
     },
 
-}, {
-    tableName: 'options_product', 
-    timestamps: false,
-});
+}, { tableName: 'options_product', timestamps: false, });

@@ -68,7 +68,4 @@ export const User = context.define('User', {
         allowNull: false,
     }
 
-}, {
-    tableName: 'user', 
-    timestamps: true,   
-});
+}, { tableName: 'user', timestamps: true, });

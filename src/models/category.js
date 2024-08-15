@@ -23,9 +23,6 @@ export const Category = context.define('Category', {
         defaultValue: 0, 
     },
 
-}, {
-    tableName: 'category', 
-    timestamps: false,
-});
+}, { tableName: 'category', timestamps: false, });
 
 Category.hasOne(ProductCategory, { foreignKey: 'category_id' });

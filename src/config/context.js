@@ -13,6 +13,3 @@ export const context = new Sequelize(
         dialect: process.env.DB_DIALECT,
     },
 );
-
-console.log('\n1. configDB\n');
-
