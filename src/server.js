@@ -1,5 +1,5 @@
 import express from 'express';
-import userRoutes from './routes/userRoute.js'; // Atualize o caminho se necessário
+import userRoutes from './routes/userRoute.js';
 
 const app = express();
 
@@ -11,7 +11,4 @@ app.use((req, res) => {
   res.status(404).send('Not Found');
 });
 
-const PORT = 3000;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+export default app;
