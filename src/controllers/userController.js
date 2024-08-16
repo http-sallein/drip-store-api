@@ -1,3 +1,4 @@
+import { cryptography } from "../middleware/passwordEncryption.js";
 import { User } from "../models/user.js"; 
 
 // Get all users
@@ -28,7 +29,19 @@ export const getUserById = async (req, res) => {
 // Create a new user
 export const createUser = async (req, res) => {
     try {
-        const user = await User.create(req.body);
+        const password = cryptography(req.body.password);
+        const first_name = req.body.first_name;
+        const sur_name = req.body.sur_name;
+        const email = req.body.email;
+        
+        const obj = {
+            first_name,
+            sur_name,
+            email,
+            password: password
+        };
+        const user = await User.create(obj);
+
         res.status(201).json(user);
     } catch (error) {
         res.status(500).json({ error: error.message });
