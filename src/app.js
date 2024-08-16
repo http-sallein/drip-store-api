@@ -4,7 +4,7 @@ import { createDatabase } from "../public/createDatabase.js";
 import { createTables } from "../public/createTables.js";
 
 import server from './server.js';
-import { createJwtToken } from './helpers/createJwtToken.js';
+import { createJwtToken } from './middleware/createJwtToken.js';
 
 async function main() {
 
