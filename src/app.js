@@ -4,6 +4,7 @@ import { createDatabase } from "../public/createDatabase.js";
 import { createTables } from "../public/createTables.js";
 
 import server from './server.js';
+import { createJwtToken } from './helpers/createJwtToken.js';
 
 async function main() {
 
@@ -11,6 +12,18 @@ async function main() {
 
         await createDatabase();
         await createTables();
+
+        let userInformations = {
+
+            id: 1,
+            firstName: 'Isaac',
+            surName: 'Lima',
+            createdAt: '2000'
+        }
+
+        const token = createJwtToken(userInformations, '1h');
+
+        console.log(token);
 
         const port = configDB.development.port || 3000;
 
