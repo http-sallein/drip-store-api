@@ -55,6 +55,5 @@ export const Product = context.define('Product', {
 
 }, { tableName: 'product', timestamps: false, });
 
-
 Product.hasMany(ImagesProduct);
 Product.hasOne(ProductCategory, { foreignKey: 'product_id' });
