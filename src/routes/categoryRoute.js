@@ -135,6 +135,6 @@ router.put('/category/:id', authenticateToken, updateCategory);
  *       500:
  *         description: Erro interno do servidor
  */
-router.delete('/category/:id', deleteCategory);
+router.delete('/category/:id', authenticateToken, deleteCategory);
 
 export default router;

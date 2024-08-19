@@ -161,7 +161,7 @@ router.put('/product/:id', authenticateToken, updateProduct);
  *       500:
  *         description: Erro interno do servidor
  */
-router.delete('/product/:id', deleteProduct);
+router.delete('/product/:id', authenticateToken, deleteProduct);
 
 
 /**
