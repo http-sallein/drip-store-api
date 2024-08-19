@@ -1,3 +1,5 @@
+import { compare } from "bcrypt";
+
 export const comparePassword = (password, hash) => {
 
     compare(password, hash, (error, result) => {

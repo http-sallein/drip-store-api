@@ -1,13 +1,15 @@
-import { hash } from "bcrypt";
+import { hash, hashSync } from "bcrypt";
 
 const saltRounds = 10;
 
-export const cryptography = (password) => {
+export const cryptography = async (password) => {
 
-    hash(password, saltRounds, (error, hash) => {
+    try {
 
-        if(error) throw console.error('Error:' + error);        
+        const hashedPassword = await hash(password, saltRounds);
 
-        return hash;
-    });
+        return hashedPassword;
+    } 
+    
+    catch (error) { throw new Error('Error hashing password: ' + error) }
 }
