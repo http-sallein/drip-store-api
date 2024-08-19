@@ -2,9 +2,9 @@ import { configDB } from './config/config.js';
 
 import { createDatabase } from "../public/createDatabase.js";
 import { createTables } from "../public/createTables.js";
+import { createJwtToken } from './middleware/createJwtToken.js';
 
 import server from './server.js';
-import { createJwtToken } from './middleware/createJwtToken.js';
 
 async function main() {
 

@@ -9,6 +9,12 @@ export const OptionsProduct = context.define('OptionsProduct', {
 
         type: DataTypes.INTEGER,
         allowNull: false,
+        
+        references: {
+
+            model: 'product',
+            key: 'id'
+        }
     },
 
     title: {
