@@ -39,7 +39,8 @@ O Drip-Store Backend é a API RESTful do eCommerce DripStore, desenvolvida em No
     ```
 8.  A API estará rodando em `http://localhost:3000`.
 
-## Tecnologias utilizadas
+## ![Tecnologias Utilizadas Icon](https://img.icons8.com/color/48/000000/gear.png) Tecnologias Utilizadas
+
 
 
 | ![Node.js Icon](https://img.icons8.com/color/48/000000/nodejs.png) <br> **Node.js** | ![Express.js Icon](https://img.icons8.com/ios/50/000000/express-js.png) <br> **Express.js** | ![GitHub Icon](https://img.icons8.com/nolan/64/github.png) <br> **GitHub** | ![JavaScript Icon](https://img.icons8.com/color/48/000000/javascript.png) <br> **JavaScript** | ![Git Icon](https://img.icons8.com/color/48/000000/git.png) <br> **Git**| ![Supertest Icon](https://img.icons8.com/color/48/000000/api.png) <br> **Supertest** |
