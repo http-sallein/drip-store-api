@@ -1,7 +1,7 @@
 # <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Symbols/Dizzy.webp" alt="Dizzy" width="25" height="25" /> Drip-Store Backend | eCommerce
 
-![img](https://img.shields.io/github/license/DevSaLLein/drip-store-backend.svg)
-![img](https://img.shields.io/github/release/DevSaLLein/drip-store-backend.svg)
+![img](https://img.shields.io/github/license/http-sallein/drip-store-api.svg)
+![img](https://img.shields.io/github/release/http-sallein/drip-store-api.svg)
 ![img](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Face%20with%20Monocle.png" alt="Face with Monocle" width="25" height="25" /> O que é o Drip-Store Backend?
